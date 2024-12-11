@@ -4,6 +4,14 @@ NUM_DICE = 3
 DICE_SIDES = 6
 MAX_SCORE = 50
 
+#You can add a function here to display the rules for the player
+#Something like
+def display_rules():
+    """Display the rules of the game"""
+    print("Welcome to the Dice Game!") 
+    print("The rules are:")
+    #Comtinue and state the rules
+
 def roll_dice():
     #Roll three dice and return the results as a list.
     return [randint(1, DICE_SIDES) for _ in range(NUM_DICE)]
